@@ -263,8 +263,10 @@ public class RecyclerViewPositionHelper {
 
 ```java
 
+ mRecyclerViewHelper = RecyclerViewPositionHelper.createHelper(recyclerView);
+
  InfiniteScrollProvider infiniteScrollProvider = new InfiniteScrollProvider();
-        infiniteScrollProvider.attach(book_recyclerView,new OnLoadMoreListener() {
+        infiniteScrollProvider.attach(recyclerView,new OnLoadMoreListener() {
             @Override
             public void onLoadMore()
             {
